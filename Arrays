@@ -1,0 +1,47 @@
+public class ArraysKopieren {
+
+	public static void main(String[] args) {
+		int[] original = { 1, 2, 4, 8, 16 };
+		int[] copy = new int[original.length];
+		
+		//original falsch kopieren
+		int[] meep = original;
+		
+		//meep mit 2 multiplizieren
+		for (int i = 0; i < meep.length; i++) {
+			meep[i] = meep[i]*2;
+		}
+		
+		//beide Arrays anzeigen
+		for (int x = 0; x < original.length; x++)
+			System.out.println("original" + original[x]);
+		
+		for (int x = 0; x < meep.length; x++)
+			System.out.println("meep" + meep[x]);
+
+		
+		
+		// original kopieren
+		for (int i = 0; i < original.length; i++) {
+			copy[i] = original[i];
+
+		}
+		
+		//copy mit 2 multiplizieren
+		for (int i = 0; i < copy.length; i++) {
+			copy[i] = copy[i]*2;
+		}
+		
+		//Werte beider Arrays ausgeben
+		for (int x = 0; x < original.length; x++) {
+			System.out.print ("original " + original[x] );
+			
+		for (int a = 0; a < copy.length; a++) {
+			System.out.print("copy " + copy[a]);
+		}
+			
+		}
+		
+
+	}
+}
